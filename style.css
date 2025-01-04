@@ -29,15 +29,15 @@
             transform: scale(1.1);
         }
         .hero {
-            background: url(logo4.jpg) no-repeat center center/cover;
+            background: url(logo4.jpg) no-repeat top/cover;
             height: 400px;
             display: flex;
-            color: #fefefe;
+            color: #000000;
             justify-content: center;
             align-items: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 2.5em;
-            text-shadow: 2px 2px 5px rgba(229, 50, 229, 0.79);
+            text-shadow: 2px 2px 5px rgba(9, 212, 154, 0.875);
             animation: fadeIn 2s;
         }
         @keyframes fadeIn {
@@ -99,7 +99,7 @@
           }
           
           .add-to-cart {
-            background-color: #3fb802;
+            background-color: #e112d0;
           }
           
           .buy-now {
