@@ -1,0 +1,86 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: linear-gradient(180deg, #fefcea, #f1da36);
+        }
+        header {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        header a:hover {
+            color: #ffebcc;
+            transform: scale(1.1);
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            padding: 20px;
+        }
+        .shop-item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            background: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .shop-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .shop-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                font-size: 1.5em;
+                height: 300px;
+            }
+            .shop-item {
+                flex: 1 1 calc(100% - 20px);
+                margin: 10px 0;
+            }
+        }
+    
