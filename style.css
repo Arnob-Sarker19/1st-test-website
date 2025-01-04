@@ -83,5 +83,32 @@
                 flex: 1 1 calc(100% - 20px);
                 margin: 10px 0;
             }
+
         }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          .add-to-cart,
+          .buy-now {
+            padding: 10px 20px;
+            border: 1px solid #394bda;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .add-to-cart {
+            background-color: #3fb802;
+          }
+          
+          .buy-now {
+            background-color: #007bff;
+            color: rgb(169, 28, 28);
+          }
+          
+          .highlighted {
+            font-weight: bold;
+            background-color: #cc3434;
+          }
     
